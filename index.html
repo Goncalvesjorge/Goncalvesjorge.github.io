@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Software Engineer</title>
+    <!-- Tailwind CSS para estilização moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Container Principal -->
+    <main class="max-w-3xl mx-auto px-6 py-16 w-full">
+        
+        <!-- Cabeçalho / Perfil -->
+        <header class="mb-12">
+            <h1 class="text-3xl font-bold tracking-tight text-white mb-2">Jorge Gonçalves</h1>
+            <p class="text-indigo-400 font-medium text-lg">Computer Science Student & Software Developer</p>
+            <p class="text-slate-400 mt-4 leading-relaxed">
+                Focused on software architecture, Python development, and exploring generative AI architectures and multi-agent systems. Passionate about turning complex problems into clean, efficient code.
+            </p>
+        </header>
+
+        <!-- Tech Stack -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-white mb-4 border-b border-slate-800 pb-2">Tech Stack</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-cardBg text-slate-300 px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-700/50">Python</span>
+                <span class="bg-cardBg text-slate-300 px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-700/50">Linux (Ubuntu)</span>
+                <span class="bg-cardBg text-slate-300 px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-700/50">Git & GitHub</span>
+                <span class="bg-cardBg text-slate-300 px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-700/50">Generative AI</span>
+                <span class="bg-cardBg text-slate-300 px-3 py-1.5 rounded-lg text-sm font-medium border border-slate-700/50">LangChain</span>
+            </div>
+        </section>
+
+        <!-- Projetos em Destaque -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-white mb-4 border-b border-slate-800 pb-2">Featured Projects</h2>
+            <div class="grid gap-4">
+                <!-- Projeto 1 -->
+                <div class="bg-cardBg p-5 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-all">
+                    <h3 class="font-semibold text-white text-lg mb-1">Multi-Agent AI System</h3>
+                    <p class="text-slate-400 text-sm mb-3">Experimental setup utilizing multi-agent configurations for automated data workflows and task distribution.</p>
+                    <a href="https://github.com/Goncalvesjorge" target="_blank" class="text-indigo-400 text-sm font-medium hover:underline inline-flex items-center gap-1">Ver no GitHub &rarr;</a>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="bg-cardBg p-5 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-all">
+                    <h3 class="font-semibold text-white text-lg mb-1">Python Automation & Utilities</h3>
+                    <p class="text-slate-400 text-sm mb-3">Collection of custom scripts built using Python, focusing on clean architecture and problem-solving.</p>
+                    <a href="https://github.com/Goncalvesjorge" target="_blank" class="text-indigo-400 text-sm font-medium hover:underline inline-flex items-center gap-1">Ver no GitHub &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links e Contato -->
+        <section>
+            <h2 class="text-xl font-semibold text-white mb-4 border-b border-slate-800 pb-2">Connect</h2>
+            <div class="flex gap-4">
+                <a href="https://github.com/Goncalvesjorge" target="_blank" class="text-slate-300 hover:text-white bg-cardBg px-4 py-2 rounded-lg border border-slate-700 text-sm font-medium transition-colors">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="text-slate-300 hover:text-white bg-cardBg px-4 py-2 rounded-lg border border-slate-700 text-sm font-medium transition-colors">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-6 text-slate-500 text-sm border-t border-slate-900">
+        <p>&copy; 2026 Jorge Gonçalves. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
